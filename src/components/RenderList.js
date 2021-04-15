@@ -6,7 +6,7 @@ export default class RenderList extends Component {
   constructor(){
     super()
     this.state = {
-      people: {}
+      people: []
     }
   }
 
@@ -18,17 +18,12 @@ componentDidMount(){
     })
 }
 
-
   render() {
-    console.log(this.state.people)
-
     return (
-      <div>
-       
-        <List/>
-        <ul>
-      </ul>
-        Render list comp
+      <div className="container">
+        {this.state.people.map(person => {
+          return <List name={person.name} image={person.image}/>
+        })}
       </div>
     )
   }

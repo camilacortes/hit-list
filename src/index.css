@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 450px 450px 450px;
+  grid-template-rows: 450px 450px 450px;
+  margin: 0px 0px 0px 32px;
+}
+
+.image {
+  width: 387px;
+  height: 320px;
+  margin: 15px;
+}
+
+.name {
+  background-color: #eaeded;
+  margin: 0px;
+}
+
+.header {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: #eaeded;
+  margin: 0px 0 15px 0px;
+  padding: 32px;
+}
+
+.info-card {
+  border: solid grey;
+}
